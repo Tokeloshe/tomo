@@ -177,6 +177,14 @@ Tap [shelf] on the home screen, then [settings]. All sharing is opt-in. Export y
 
 ## Installation
 
+### Before you begin
+
+Tomo is a plugin for [KOReader](https://koreader.rocks/), an open source reading application for e-ink devices. It is not a standalone app. You need KOReader installed on your Kobo or Kindle before Tomo can run.
+
+If you do not have KOReader yet, visit the [KOReader installation wiki](https://github.com/koreader/koreader/wiki) for step by step guides for your specific device. Installation takes a few minutes and does not modify your device permanently.
+
+### Steps
+
 1. Download the latest release from the [Releases](https://github.com/Tokeloshe/tomo/releases) page
 2. Unzip it to get the tomo.koplugin folder
 3. Connect your e-reader via USB
