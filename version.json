@@ -1,6 +1,6 @@
 {
-    "version": "2.6.1",
-    "url": "https://github.com/Tokeloshe/tomo/releases/download/v2.6.1/tomo.koplugin.zip",
+    "version": "2.6.2",
+    "url": "https://github.com/Tokeloshe/tomo/releases/download/v2.6.2/tomo.koplugin.zip",
     "min_koreader": "2025.10",
     "notes": "Automatic updates, crash reporting, improved interface"
 }
