@@ -1,6 +1,6 @@
 {
-    "version": "2.6.6",
-    "url": "https://github.com/Tokeloshe/tomo/releases/download/v2.6.6/tomo.koplugin.zip",
-    "min_koreader": "2025.10",
-    "changelog": "Crash report dedup and upload fix, Kindle device ID fallback, crash log parser, crash-loop detection, full crash field population, atomic OTA with rollback, last_seen tracking, postcrossing debounce, penpal matching fix, reading presence reporting"
+    "version": "2.7.0",
+    "url": "https://github.com/Tokeloshe/tomo/releases/download/v2.7.0/tomo.koplugin.zip",
+    "notes": "Bug fixes: OTA update reliability, crash reporting accuracy, Kindle/non-Kobo device support.",
+    "min_koreader": "2024.07"
 }
