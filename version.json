@@ -1,6 +1,6 @@
 {
     "version": "2.7.0",
-    "url": "https://github.com/Tokeloshe/tomo/releases/download/v2.7.0/tomo.koplugin.zip",
+    "url": "https://raw.githubusercontent.com/Tokeloshe/tomo/main/tomo.koplugin.zip",
     "notes": "Bug fixes: OTA update reliability, crash reporting accuracy, Kindle/non-Kobo device support.",
     "min_koreader": "2024.07"
 }
