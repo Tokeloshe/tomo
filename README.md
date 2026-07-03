@@ -1,3 +1,6 @@
+<!-- © 2026 James Edward Honiball. All Rights Reserved. -->
+<!-- Tomo™ (友) — Social Reading Companion for Kobo -->
+
 # Tomo
 
 A social reading companion for Kobo and Kindle e-readers.
@@ -123,7 +126,7 @@ This is the empty state. When someone else is reading the same book as you, a ro
 │   micro-seasons, each marking    │
 │   a shift in the natural world.  │
 │                                  │
-│   ────────────────────────     │
+│   ──────────────────────────     │
 │                                  │
 │   Previous                       │
 │   啓蟄 Keichitsu                 │
@@ -168,7 +171,7 @@ Export my data
 Leave Tomo
 
 ABOUT
-Tomo v2.6.0
+Tomo v2.7.3
 友 (tomo) means "friend" in Japanese.
 (c) 2026 James Edward Honiball
 ```
@@ -183,16 +186,56 @@ Tomo is a plugin for [KOReader](https://koreader.rocks/), an open source reading
 
 If you do not have KOReader yet, visit the [KOReader installation wiki](https://github.com/koreader/koreader/wiki) for step by step guides for your specific device. Installation takes a few minutes and does not modify your device permanently.
 
+Requires KOReader 2024.07 or later.
+
 ### Steps
 
-1. Download the latest release from the [Releases](https://github.com/Tokeloshe/tomo/releases) page
-2. Unzip it to get the tomo.koplugin folder
-3. Connect your e-reader via USB
-4. Copy tomo.koplugin into /mnt/onboard/.adds/koreader/plugins/
-5. Restart KOReader
-6. Open the menu and find Tomo under Tools
+1. Download the latest release from the [Releases](https://github.com/Tokeloshe/tomo/releases) page.
 
-Requires KOReader 2025.10 or later.
+2. Unzip it. You get a folder named `tomo.koplugin`. The name matters: it must be exactly `tomo.koplugin`. If your unzip tool wrapped it inside an outer folder, open that outer folder and use the `tomo.koplugin` folder from inside it.
+
+3. Connect your e-reader to your computer with a USB cable. If the device asks, tap Connect. It appears on your computer as an ordinary USB drive, named `KOBOeReader` on Kobo or `Kindle` on Kindle.
+
+4. On that drive, find KOReader's plugins folder:
+
+   |  | Kobo | Kindle |
+   | --- | --- | --- |
+   | Windows | `H:\.adds\koreader\plugins\` | `H:\koreader\plugins\` |
+   | Mac | `/Volumes/KOBOeReader/.adds/koreader/plugins/` | `/Volumes/Kindle/koreader/plugins/` |
+   | Linux | `<mount point>/.adds/koreader/plugins/` | `<mount point>/koreader/plugins/` |
+
+   On Windows the drive letter (`H:` in the examples) will be whatever your computer assigned. Look for the drive by name.
+
+   Some guides write the Kobo path as `/mnt/onboard/.adds/koreader/plugins/`. That is the same place. `/mnt/onboard` is simply what the Kobo calls its own storage; from your computer, the USB drive itself is `/mnt/onboard`.
+
+   If you cannot see the `.adds` folder, it is because Mac and Linux hide folders whose names start with a dot. In Finder, press `Cmd+Shift+.` to show hidden files. In most Linux file managers, press `Ctrl+H`. Windows shows the folder normally.
+
+   You are in the right place when you see other folders whose names end in `.koplugin`.
+
+5. Copy the whole `tomo.koplugin` folder into `plugins`.
+
+6. Safely eject the drive, then restart KOReader. Exit it completely and open it again; putting the device to sleep is not a restart.
+
+7. Open the top menu, go to the Tools tab (the wrench icon), and find Tomo.
+
+You only need to do this once. From then on, Tomo updates itself over Wi-Fi.
+
+### Quick install (Windows)
+
+If you prefer, one PowerShell command does all of the steps above: it downloads the latest release, finds your connected e-reader on any drive letter, and installs the plugin. Connect your e-reader first, then paste this into PowerShell and press Enter:
+
+```powershell
+[Net.ServicePointManager]::SecurityProtocol='Tls12'; $v=Invoke-RestMethod 'https://raw.githubusercontent.com/Tokeloshe/tomo/main/version.json'; $tmp=Join-Path $env:TEMP 'tomo-install'; Remove-Item $tmp -Recurse -Force -ErrorAction SilentlyContinue; New-Item $tmp -ItemType Directory | Out-Null; Invoke-WebRequest $v.url -OutFile "$tmp\tomo.zip"; Expand-Archive "$tmp\tomo.zip" "$tmp\x" -Force; $src=Get-ChildItem "$tmp\x" -Recurse -Directory -Filter 'tomo.koplugin' | Select-Object -First 1; $dst=Get-PSDrive -PSProvider FileSystem | ForEach-Object { "$($_.Root).adds\koreader\plugins"; "$($_.Root)koreader\plugins" } | Where-Object { Test-Path $_ } | Select-Object -First 1; if(-not $src){ throw 'tomo.koplugin folder not found in the download.' }; if(-not $dst){ throw 'No connected e-reader with KOReader found. Connect it via USB, tap Connect on the device, and check KOReader is installed.' }; Remove-Item "$dst\tomo.koplugin" -Recurse -Force -ErrorAction SilentlyContinue; Copy-Item $src.FullName $dst -Recurse -Force; Remove-Item $tmp -Recurse -Force; Write-Host "Tomo v$($v.version) installed to $dst. Safely eject the drive, then fully restart KOReader."
+```
+
+When it finishes, safely eject the drive and restart KOReader. The same command also updates an existing install to the latest version.
+
+### If Tomo does not appear
+
+- **Check the second page of the Tools menu.** KOReader paginates its menus, and Tomo may be on page two.
+- **Check the folder nesting.** The file `main.lua` must be at `plugins/tomo.koplugin/main.lua`. If it ended up at `plugins/tomo.koplugin/tomo.koplugin/main.lua`, move the inner folder up one level.
+- **Check the folder name.** It must be exactly `tomo.koplugin`, not `tomo.koplugin-v2.7.3` or `tomo`.
+- **Restart properly.** Exit KOReader fully and reopen it.
 
 ## Supported devices
 

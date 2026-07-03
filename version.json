@@ -1,6 +1,7 @@
 {
-    "version": "2.7.0",
-    "url": "https://raw.githubusercontent.com/Tokeloshe/tomo/main/tomo.koplugin.zip",
-    "notes": "Bug fixes: OTA update reliability, crash reporting accuracy, Kindle/non-Kobo device support.",
+    "_copyright": "© 2026 James Edward Honiball. All Rights Reserved. Tomo™ (友)",
+    "version": "2.7.3",
+    "url": "https://raw.githubusercontent.com/Tokeloshe/tomo/main/tomo.koplugin-v2.7.3.zip",
+    "notes": "Letter writing fixed: Seal and close respond to finger taps. The home page always fits on one screen. Better support across Kobo and Kindle devices.",
     "min_koreader": "2024.07"
 }
