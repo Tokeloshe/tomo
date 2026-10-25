@@ -3,6 +3,10 @@
 
 # Tomo
 
+[![Latest release](https://img.shields.io/github/v/release/Tokeloshe/tomo?sort=semver&label=release&color=blue)](https://github.com/Tokeloshe/tomo/releases/latest)
+[![Downloads of the latest release](https://img.shields.io/github/downloads/Tokeloshe/tomo/latest/total?label=downloads%20(latest)&color=success)](https://github.com/Tokeloshe/tomo/releases/latest)
+[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-Tokeloshe-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/Tokeloshe)
+
 A social reading companion for Kobo and Kindle e-readers.
 
 Tomo (友, friend) is a plugin for KOReader that adds quiet social presence to your reading life. It is not a social network. It has no feed, no algorithm, no engagement metrics. It is simply a place where readers can be together.
