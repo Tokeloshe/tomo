@@ -1,7 +1,7 @@
 {
     "_copyright": "© 2026 James Edward Honiball. All Rights Reserved. Tomo™ (友)",
-    "version": "2.7.3",
-    "url": "https://raw.githubusercontent.com/Tokeloshe/tomo/main/tomo.koplugin-v2.7.3.zip",
-    "notes": "Letter writing fixed: Seal and close respond to finger taps. The home page always fits on one screen. Better support across Kobo and Kindle devices.",
+    "version": "2.7.4",
+    "url": "https://raw.githubusercontent.com/Tokeloshe/tomo/main/tomo.koplugin-v2.7.4.zip",
+    "notes": "A quieter release: nothing new to learn. Tomo recovers its session on its own after sleep, a full storage no longer interrupts a sync, and letters are checked before they are sealed.",
     "min_koreader": "2024.07"
 }
