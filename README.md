@@ -5,7 +5,8 @@
 
 [![Latest release](https://img.shields.io/github/v/release/Tokeloshe/tomo?sort=semver&label=release&color=blue)](https://github.com/Tokeloshe/tomo/releases/latest)
 [![Downloads of the latest release](https://img.shields.io/github/downloads/Tokeloshe/tomo/latest/total?label=downloads%20(latest)&color=success)](https://github.com/Tokeloshe/tomo/releases/latest)
-[![Buy Me A Coffee](https://img.shields.io/badge/Buy%20me%20a%20coffee-Tokeloshe-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/Tokeloshe)
+[![Sponsor](https://img.shields.io/badge/sponsor-GitHub-EA4AAA?logo=githubsponsors&logoColor=white)](https://github.com/sponsors/Tokeloshe)
+[![Buy me a coffee](https://img.shields.io/badge/buy%20me%20a%20coffee-%245-FFDD00?logo=buymeacoffee&logoColor=black)](https://buymeacoffee.com/Tokeloshe)
 
 A social reading companion for Kobo and Kindle e-readers.
 
@@ -271,6 +272,20 @@ There is no analytics. No telemetry. No third-party tracking. Crash reports cont
 Tomo is seasonally conscious. It follows Japan's 二十四節気 (nijushi sekki), the ancient calendar of 24 micro-seasons. Each lasts about fifteen days. The current sekki appears on the home screen, a quiet thread tying the digital to the physical world.
 
 Tap the seasonal greeting to learn which sekki you are in, what came before, and what comes next.
+
+## Support Tomo
+
+Tomo is free and made by one person in the evenings. If it has made your reading a little less solitary, a coffee ($5) or a GitHub sponsorship is the nicest way to say so, and it pays for the server that carries your letters.
+
+<p align="center">
+  <a href="https://github.com/sponsors/Tokeloshe"><img src="https://img.shields.io/badge/Sponsor%20on%20GitHub-EA4AAA?style=for-the-badge&logo=githubsponsors&logoColor=white" alt="Sponsor on GitHub" height="40"></a>
+  &nbsp;&nbsp;
+  <a href="https://buymeacoffee.com/Tokeloshe"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" height="40"></a>
+</p>
+
+<p align="center"><sub>GitHub Sponsors: two clicks if you are signed in to GitHub. Buy Me a Coffee: any card, no account needed.</sub></p>
+
+Can't right now? A star on this page or a clear bug report helps Tomo just as much.
 
 ---
 
